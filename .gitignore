@@ -1,0 +1,27 @@
+# Ignore everything so repository can be used in game instance
+/*
+
+# Add directories with soure code
+!config/
+!defaultconfigs/
+!kubejs/
+!mods/panorama/
+!packmode/
+!panoramas/
+!scripts/
+
+# Add files in main directory
+!.gitattributes
+!.gitignore
+!LICENSE
+!packmode_picker.bat
+!packmode_picker.sh
+!packmode_picker.py
+!panorama.dat
+!README.md
+
+# Specific exclusion
+config/fml.toml
+config/emi.cssWWWW
+
+config/jei/*

@@ -65,3 +65,4 @@
 - **SuperMartijn642's Config Lib** (438332) Version 1.1.8 ([4715408](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib/files/4715408))
 - **SuperMartijn642's Core Lib** (454372) Version 1.1.8 ([6034718](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib/files/6034718))
 - **EpheroLib** (885449) Version 1.2.0 ([4889101](https://www.curseforge.com/minecraft/mc-mods/epherolib/files/4889101))
+- **ProbeJS** (585406) Version 6.0.1 ([4889101](https://www.curseforge.com/minecraft/mc-mods/probejs/files/5227399))
