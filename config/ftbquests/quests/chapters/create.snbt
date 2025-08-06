@@ -1,0 +1,402 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: ""
+	id: "2CB06E9EB7AB3FF1"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Create"]
+			id: "5CCC881C442AF9B3"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "A wrench to start"
+			tasks: [{
+				id: "56723688EBAEBD06"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "Create starts here"
+			x: -14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5CCC881C442AF9B3"]
+			icon: "create:andesite_alloy"
+			id: "1A1BDB08F19044F3"
+			rewards: [{
+				count: 8
+				id: "7EB0624626978487"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Recipe for Andesite Alloy"
+			tasks: [
+				{
+					count: 8L
+					id: "3E780A290AEE136C"
+					item: { Count: 8, id: "minecraft:andesite" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "758446A2004DAF70"
+					item: { Count: 8, id: "minecraft:iron_nugget" }
+					type: "item"
+				}
+			]
+			title: "Andesite Era"
+			x: -11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5CCC881C442AF9B3"]
+			icon: "minecraft:copper_ingot"
+			id: "588190533D810E0A"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "4EBC05A6EEFCC773"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			title: "Copper Era"
+			x: -11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1A1BDB08F19044F3"
+				"5E317DB303D253D1"
+				"3E8FB5A975087A8E"
+				"0A6F2FED77E7E55B"
+			]
+			id: "20D38C939277E859"
+			subtitle: "Supports you for your mining trips"
+			tasks: [
+				{
+					id: "30DD5E580E97D19E"
+					item: "create:cart_assembler"
+					type: "item"
+				}
+				{
+					id: "10D113989FCD8F27"
+					item: "minecraft:minecart"
+					type: "item"
+				}
+				{
+					id: "056DA96291551C66"
+					item: "minecraft:rail"
+					type: "item"
+				}
+			]
+			title: "Cart Contraptions"
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5CCC881C442AF9B3"]
+			icon: {
+				Count: 1
+				id: "create:super_glue"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E317DB303D253D1"
+			subtitle: "Glue all your contraptions together"
+			tasks: [{
+				id: "47210091DE244413"
+				item: {
+					Count: 1
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Super Glue"
+			x: -14.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5E317DB303D253D1"]
+			id: "775038B0D11F0EEF"
+			tasks: [
+				{
+					id: "1970167960AA66A5"
+					item: "create:windmill_bearing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3B3A571555A19615"
+					item: "create:mechanical_bearing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "186F8858450131B3"
+					item: "create:clockwork_bearing"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"41BA57366BAFC353"
+				"588190533D810E0A"
+				"7C9FB8AC45434D65"
+			]
+			id: "604D4922D0F07760"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "29AB1956E1030D70"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["604D4922D0F07760"]
+			id: "3E8FB5A975087A8E"
+			tasks: [{
+				id: "7F0D7B9A4F9D20D4"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["135A8C4544ABB702"]
+			id: "0A6F2FED77E7E55B"
+			tasks: [{
+				id: "0D0975C9C0DA8167"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"78769BE1F390764B"
+				"135A8C4544ABB702"
+			]
+			id: "7C9FB8AC45434D65"
+			tasks: [
+				{
+					id: "3E67C772AAE46A8E"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "79FF8123C3B1B195"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["78769BE1F390764B"]
+			id: "3863BB4DFE94A090"
+			tasks: [{
+				id: "4EE0D7F688A6B7DA"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["78769BE1F390764B"]
+			id: "2B0C15578F14F04C"
+			tasks: [{
+				id: "4FCD5EAE7C53A7B6"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["135A8C4544ABB702"]
+			id: "78769BE1F390764B"
+			tasks: [{
+				id: "28FFE80BF3B960C9"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"20D38C939277E859"
+				"66DE9977540117DA"
+			]
+			id: "588093CC3D00CB40"
+			tasks: [{
+				id: "473CBE22273C0042"
+				item: "create:mechanical_roller"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1A1BDB08F19044F3"]
+			id: "135A8C4544ABB702"
+			tasks: [{
+				id: "78327164119F20B7"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["78769BE1F390764B"]
+			id: "17CEA2341F4372C0"
+			tasks: [{
+				id: "556DF2BEE331DF4C"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["17CEA2341F4372C0"]
+			id: "41BA57366BAFC353"
+			tasks: [{
+				id: "288CB257772D07A3"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["604D4922D0F07760"]
+			id: "67B1EC528CD68BDE"
+			tasks: [{
+				count: 12L
+				id: "75E316A528DE5D8D"
+				item: { Count: 9, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["67B1EC528CD68BDE"]
+			id: "66DE9977540117DA"
+			tasks: [{
+				count: 2L
+				id: "7FE7464ED7E071E4"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["78769BE1F390764B"]
+			id: "7D514786D9B6721D"
+			tasks: [{
+				id: "515E5C93F1426F52"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			icon: "minecraft:iron_ingot"
+			id: "6E17BC525FC7DDE9"
+			shape: "rsquare"
+			tasks: [{
+				id: "62DE964A16979F4C"
+				title: "Iron Farm"
+				type: "checkmark"
+			}]
+			title: "Selfsustain Iron Farm"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			icon: "minecraft:copper_ingot"
+			id: "1FEA783CA2F07919"
+			shape: "rsquare"
+			tasks: [{
+				id: "26868F0393203771"
+				title: "Copper"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			icon: "create:zinc_ingot"
+			id: "48483C85B8E9DECC"
+			shape: "rsquare"
+			tasks: [{
+				id: "0C39BC3658434088"
+				title: "Zinc"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			icon: "minecraft:redstone"
+			id: "317B0E2FF664AEB4"
+			shape: "rsquare"
+			tasks: [{
+				id: "35EB40E80E3372A5"
+				title: "Redstone"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			icon: "create:brass_ingot"
+			id: "50144D5FA9DF3E34"
+			shape: "rsquare"
+			tasks: [{
+				id: "30251E537BEF46FB"
+				title: "Brass"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			icon: "minecraft:gold_ingot"
+			id: "6E47722B65F62377"
+			shape: "rsquare"
+			tasks: [{
+				id: "2D4EA2269AB914EB"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+	]
+	title: "Create"
+}
