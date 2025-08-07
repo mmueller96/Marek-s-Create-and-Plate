@@ -1,0 +1,45 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "berlebenskunst"
+	group: "354AFCABE22A0F03"
+	id: "04C6B8CDA4A25DB6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["\"Die ersten Siedler Aetherias überlebten dank uralter Anbautechniken. Pflanze 10 verschiedene Croptopia-Gemüsesorten an – vielleicht erwachen die vergessenen Rezepte ja wieder!\""]
+			id: "4EC877CF0E775D07"
+			subtitle: "Ein leerer Magen denkt nicht gern."
+			tasks: [{
+				id: "113072C147C2EA3B"
+				title: "Erste Ernte"
+				type: "checkmark"
+			}]
+			title: "Saat der Hoffnung"
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			id: "358FD99A5ED50C1E"
+			tasks: [{
+				id: "50CAE66EC9169C84"
+				title: "Der Kochtopf ruft"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			id: "16D9C838E811F179"
+			tasks: [{
+				id: "6E113E459ED4DFC2"
+				title: "Antikes Kückenmesser"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+	]
+	title: "Überlebenskunst"
+}

@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "willkommen"
+	group: ""
+	id: "1F9986C3D54C2355"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		description: ["\"Einst war das Tal von Aetheria eine blühende Zivilisation, vereint durch magische Ingenieurskunst. Doch als der 'Große Mechanismus' – eine gigantische Create-Kontraption, angetrieben von Botania-Magie – versagte, versank das Tal in Chaos. Die Ernten verdorrten &e(Farmer’s Delight)&r, die Maschinen rosteten &6(Create)&r, und die magischen Blumen &3(Botania)&r welkten. Nun bist du erwählt, die Balance wiederherzustellen – durch Automatisierung, Alchemie und meisterhafte Schmiedekunst &8(Tinkers’ Construct)&r.\""]
+		id: "011926DD42B82EE6"
+		tasks: [{
+			id: "44292AAC9329E96C"
+			title: "Das verwunschene Tal von Aetheria"
+			type: "checkmark"
+		}]
+		x: -0.5d
+		y: -1.5d
+	}]
+	title: "Willkommen"
+}

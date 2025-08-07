@@ -1,3 +1,6 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "354AFCABE22A0F03", title: "Das Erbe von Aetheria" }
+		{ id: "4EC6F605E143BA85", title: "Die Sprache der Maschinen" }
+	]
 }
