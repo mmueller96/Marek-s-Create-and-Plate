@@ -27,6 +27,18 @@
 			x: -1.5d
 			y: -1.5d
 		}
+		{
+			description: ["25 verschiedene gerichte von Farmer's Delight"]
+			id: "672389788A55FE2B"
+			tasks: [{
+				advancement: "farmersdelight:main/master_chef"
+				criterion: ""
+				id: "5BD7DA305A839C52"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
 	]
 	title: "Farmer's Delight"
 }

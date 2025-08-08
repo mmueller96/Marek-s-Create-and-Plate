@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "title": {
+      "text": "Plant 10 Unique Crops"
+    },
+    "description": {
+      "text": "You have planted 10 unique crops!"
+    },
+    "icon": {
+      "item": "minecraft:carrot"
+    },
+    "frame": "goal",
+    "announce_to_chat": true,
+    "show_toast": true,
+    "hidden": false
+  }
+}

@@ -8,8 +8,14 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"776412D75F0E9E5A"
+				"57EA8D3754E39166"
+				"0B3A0986EF55D5C4"
+			]
 			description: ["\"Die ersten Siedler Aetherias überlebten dank uralter Anbautechniken. Pflanze 10 verschiedene Croptopia-Gemüsesorten an – vielleicht erwachen die vergessenen Rezepte ja wieder!\""]
 			id: "4EC877CF0E775D07"
+			min_required_dependencies: 10
 			subtitle: "Ein leerer Magen denkt nicht gern."
 			tasks: [{
 				id: "113072C147C2EA3B"
@@ -17,8 +23,8 @@
 				type: "checkmark"
 			}]
 			title: "Saat der Hoffnung"
-			x: -10.0d
-			y: -1.0d
+			x: -13.0d
+			y: -2.5d
 		}
 		{
 			id: "358FD99A5ED50C1E"
@@ -39,6 +45,88 @@
 			}]
 			x: -7.0d
 			y: -0.5d
+		}
+		{
+			id: "776412D75F0E9E5A"
+			tasks: [{
+				id: "0F7E426929A74D79"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:onions"
+					}
+				}
+				title: "Any Onions"
+				type: "item"
+			}]
+			title: "Onions"
+			x: -14.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["776412D75F0E9E5A"]
+			id: "4EF724F71A062418"
+			tasks: [{
+				id: "70223F3808E74A39"
+				item: "croptopia:onion_seed"
+				optional_task: true
+				type: "item"
+			}]
+			x: -16.0d
+			y: -3.5d
+		}
+		{
+			id: "57EA8D3754E39166"
+			tasks: [{
+				id: "30D1783DC744FD3E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tomatoes"
+					}
+				}
+				type: "item"
+			}]
+			title: "Tomatenernte ist Reif"
+			x: -14.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["57EA8D3754E39166"]
+			id: "19AA3C7FD00DBCD8"
+			tasks: [{
+				id: "74DFBD29DD1913F4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tomato_seeds"
+					}
+				}
+				type: "item"
+			}]
+			title: "Tomato Seeds"
+			x: -16.0d
+			y: -2.5d
+		}
+		{
+			id: "0B3A0986EF55D5C4"
+			tasks: [{
+				id: "4A999EA6519803EE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rice"
+					}
+				}
+				type: "item"
+			}]
+			title: "Rice"
+			x: -14.5d
+			y: -1.5d
 		}
 	]
 	title: "Überlebenskunst"
