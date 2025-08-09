@@ -1,0 +1,177 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "botania"
+	group: "4EC6F605E143BA85"
+	id: "3249494974EB3CBC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&o\"Wie Du bemerkt hast, gibt es Pflanzen, die nicht zum Verzehr geeinget sind, aber ihre Blüten stahlen eine komplett andere Macht aus!\"&r"
+				""
+				"Sammle eine &3Botania&r Pflanze."
+				""
+				"&o\"Ich bringe Dir bei, wie man diese Macht nutzen kann und Energy für unsere Maschinen verwenden kann!\"&r"
+			]
+			id: "442F8E8087BE54B4"
+			tasks: [{
+				id: "265632C8FFC98DF6"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["442F8E8087BE54B4"]
+			id: "17D87F505200F012"
+			tasks: [{
+				id: "20D612F51435EA98"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["17D87F505200F012"]
+			id: "4B082B39A8167AF2"
+			tasks: [{
+				id: "4235F004F50EFCC4"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			id: "72C1C612D0C88DFA"
+			tasks: [
+				{
+					id: "21E842E1918483EC"
+					item: "botania:fel_pumpkin"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "716ECCDE78DF48EC"
+					item: { Count: 2, id: "minecraft:iron_bars" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B082B39A8167AF2"]
+			id: "490288AFC3DB781B"
+			tasks: [
+				{
+					count: 8L
+					id: "779BB943CFCC2868"
+					item: { Count: 8, id: "botania:livingwood_log" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "28A67A4B7F760F2B"
+					item: { Count: 8, id: "botania:livingrock" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["490288AFC3DB781B"]
+			id: "0AB431062D36ACFA"
+			tasks: [{
+				id: "3A1D43A807AD9CE3"
+				item: {
+					Count: 1
+					id: "botania:twig_wand"
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0AB431062D36ACFA"]
+			id: "6C4DCD27AF9F9A3E"
+			tasks: [{
+				id: "44A1FF47BEECE65B"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6C4DCD27AF9F9A3E"]
+			description: ["Flammbares Material droppen"]
+			id: "223DBD1A8A04134D"
+			tasks: [{
+				id: "64C09DD336BA009E"
+				item: "botania:endoflame"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6C4DCD27AF9F9A3E"]
+			description: ["Benötigt Wasser und geht nach 1h Kaputt."]
+			id: "7FB70B54F4B87B22"
+			tasks: [{
+				id: "24F1DCC7DBEA9A7C"
+				item: "botania:hydroangeas"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6C4DCD27AF9F9A3E"]
+			description: ["&o\"Persönlich meine Lieblingspflanze. Sie generiert mit übriggebliebenem Essen Mana\".&r"]
+			id: "2E62161EED39DBE1"
+			tasks: [{
+				id: "14B4A46AC0FB33D0"
+				item: "botania:gourmaryllis"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6C4DCD27AF9F9A3E"]
+			id: "59C4D2C6BE0AB0BC"
+			tasks: [{
+				id: "16223231CA3388DD"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:generating_special_flowers"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+	]
+	title: "Botania"
+}

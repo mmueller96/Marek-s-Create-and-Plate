@@ -2,9 +2,9 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "create"
-	group: ""
+	group: "354AFCABE22A0F03"
 	id: "2CB06E9EB7AB3FF1"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -326,6 +326,10 @@
 			y: -2.0d
 		}
 		{
+			dependencies: [
+				"66DE9977540117DA"
+				"67B1EC528CD68BDE"
+			]
 			icon: "minecraft:iron_ingot"
 			id: "6E17BC525FC7DDE9"
 			shape: "rsquare"
@@ -335,10 +339,14 @@
 				type: "checkmark"
 			}]
 			title: "Selfsustain Iron Farm"
-			x: -0.5d
+			x: 0.5d
 			y: -3.0d
 		}
 		{
+			dependencies: [
+				"66DE9977540117DA"
+				"67B1EC528CD68BDE"
+			]
 			icon: "minecraft:copper_ingot"
 			id: "1FEA783CA2F07919"
 			shape: "rsquare"
@@ -347,10 +355,14 @@
 				title: "Copper"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -2.0d
 		}
 		{
+			dependencies: [
+				"66DE9977540117DA"
+				"67B1EC528CD68BDE"
+			]
 			icon: "create:zinc_ingot"
 			id: "48483C85B8E9DECC"
 			shape: "rsquare"
@@ -359,10 +371,14 @@
 				title: "Zinc"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -1.0d
 		}
 		{
+			dependencies: [
+				"66DE9977540117DA"
+				"67B1EC528CD68BDE"
+			]
 			icon: "minecraft:redstone"
 			id: "317B0E2FF664AEB4"
 			shape: "rsquare"
@@ -371,10 +387,14 @@
 				title: "Redstone"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"66DE9977540117DA"
+				"67B1EC528CD68BDE"
+			]
 			icon: "create:brass_ingot"
 			id: "50144D5FA9DF3E34"
 			shape: "rsquare"
@@ -383,10 +403,14 @@
 				title: "Brass"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: 1.0d
 		}
 		{
+			dependencies: [
+				"66DE9977540117DA"
+				"67B1EC528CD68BDE"
+			]
 			icon: "minecraft:gold_ingot"
 			id: "6E47722B65F62377"
 			shape: "rsquare"
@@ -394,9 +418,62 @@
 				id: "2D4EA2269AB914EB"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: 2.0d
 		}
+		{
+			dependencies: [
+				"775038B0D11F0EEF"
+				"20D38C939277E859"
+			]
+			id: "0AE4946AB87BFE49"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "4769EA870253835D"
+				title: "Wind in den Segeln"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"50144D5FA9DF3E34"
+				"317B0E2FF664AEB4"
+				"48483C85B8E9DECC"
+				"6E17BC525FC7DDE9"
+				"6E47722B65F62377"
+				"1FEA783CA2F07919"
+			]
+			id: "0E6644190CDB4EC0"
+			min_required_dependencies: 1
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2B26A0C331F87B00"
+				title: "Erste Automation"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0E6644190CDB4EC0"
+				"0AE4946AB87BFE49"
+			]
+			id: "204CC9F364B8228E"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "64B2290115FD6D09"
+				title: "Die Maschine verlangt nach Blumen..."
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
 	]
-	title: "Create"
+	title: "Rostige Räder"
 }

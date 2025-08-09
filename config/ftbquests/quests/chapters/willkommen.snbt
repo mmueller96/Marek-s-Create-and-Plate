@@ -4,20 +4,50 @@
 	filename: "willkommen"
 	group: ""
 	id: "1F9986C3D54C2355"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		description: ["\"Einst war das Tal von Aetheria eine blühende Zivilisation, vereint durch magische Ingenieurskunst. Doch als der 'Große Mechanismus' – eine gigantische Create-Kontraption, angetrieben von Botania-Magie – versagte, versank das Tal in Chaos. Die Ernten verdorrten &e(Farmer’s Delight + Croptopia)&r, die Maschinen rosteten &6(Create)&r, und die magischen Blumen &3(Botania)&r welkten. Nun bist du erwählt, die Balance wiederherzustellen – durch Automatisierung, Alchemie und meisterhafte Schmiedekunst &4(Tinkers’ Construct)&r.\""]
-		id: "011926DD42B82EE6"
-		shape: "rsquare"
-		size: 5.0d
-		tasks: [{
-			id: "44292AAC9329E96C"
-			title: "Das verwunschene Tal von Aetheria"
-			type: "checkmark"
-		}]
-		x: -0.5d
-		y: -1.5d
-	}]
+	quests: [
+		{
+			dependencies: ["58C67585730E7ADE"]
+			description: [
+				"&o(\"Ist da gerade eine Münze rausgeschossen? Ah, hier auf der letzten Seite gibt es ein Einkaufsladen, spannend!\")&r"
+				""
+				"&o\"Erstmal vielen Dank, dass Du das Buch gefunden! Ich bin froh, dass wenigstens unser Wissen nicht verloren geht! Ich bin Marek und habe dieses Buch geschrieben.\"&r"
+				""
+				"&o\"Einst war das Tal von Aetheria eine blühende Zivilisation, vereint durch magische Ingenieurskunst. Doch als der 'Große Mechanismus' – eine gigantische Create-Kontraption, angetrieben von Botania-Magie – versagte, versank das Tal in Chaos. Die Ernten verdorrten &e(Farmer’s Delight + Croptopia)&r&o, die Maschinen rosteten &6(Create)&r&o, und die magischen Blumen &3(Botania)&r&o welkten. Nun bist du erwählt, die Balance wiederherzustellen – durch Automatisierung, Alchemie und meisterhafte Schmiedekunst &4(Tinkers’ Construct)&r&o.\"&r"
+			]
+			id: "011926DD42B82EE6"
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "44292AAC9329E96C"
+				title: "Das verwunschene Tal von Aetheria"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"&o(\"Was?! Wie bin ich den hier gekommen? ich war doch gerade noch am PC gesessen.\")&r"
+				""
+				"Du bist von einer riesigen Mana-Welle ausgehend deines PCs getroffen und in diese Welt teleportiert worden."
+				""
+				"&o(\"Was ist das hier? Ein Buch mit Zeichnung? Das sieht aus wie eine Geschichte mit Blaupausen. Ein Handbuch, wie ich in dieser Welt überlebe, sehr praktisch!\")&r"
+				""
+				"Wenn du diese Task abschließst erhälst du Mana-Münzen, die dein Überleben vereinfachen."
+			]
+			id: "58C67585730E7ADE"
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "4BB25293C28C9882"
+				title: "In eine neue Welt eingetreten"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+	]
 	title: "Willkommen"
 }
