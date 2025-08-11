@@ -6,7 +6,6 @@
 !defaultconfigs/
 !kubejs/
 !mods/panorama/
-!packmode/
 !panoramas/
 !scripts/
 
@@ -14,14 +13,11 @@
 !.gitattributes
 !.gitignore
 !LICENSE
-!packmode_picker.bat
-!packmode_picker.sh
-!packmode_picker.py
 !panorama.dat
 !README.md
 
 # Specific exclusion
 config/fml.toml
-config/emi.cssWWWW
+config/emi.css
 
 config/jei/*
