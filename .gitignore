@@ -15,6 +15,7 @@
 !LICENSE
 !panorama.dat
 !README.md
+!.prettierrc
 
 # Specific exclusion
 config/fml.toml
