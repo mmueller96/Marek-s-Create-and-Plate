@@ -104,23 +104,18 @@ ServerEvents.recipes((event) => {
     .transitionalItem(incomplete_pizza)
     .loops(1);
 
-  //Michelle's Lieblingspizza
-  event.recipes.create
-    .sequenced_assembly(
-      ['kubejs:michelles_lieblingspizza'],
-      'croptopia:pizza',
-      [
-        event.recipes.createDeploying(incomplete_pizza, [
-          incomplete_pizza,
-          'kubejs:sucuk_slice',
-        ]),
+  event.recipes.create.deploying('kubejs:raw_sucuk_pizza', [
+    'createfood:raw_cheese_pizza',
+    'kubejs:sucuk_slice',
+  ]);
 
-        event.recipes.createDeploying(incomplete_pizza, [
-          incomplete_pizza,
-          'croptopia:cheese',
-        ]),
-      ]
-    )
-    .transitionalItem(incomplete_pizza)
-    .loops(1);
+  event.recipes.create.deploying('kubejs:raw_michelles_lieblingspizza', [
+    'kubejs:raw_sucuk_pizza',
+    '#forge:cheeses',
+  ]);
+
+  event.smelting(
+    'kubejs:raw_michelles_lieblingspizza',
+    'kubejs:michelles_lieblingspizza'
+  );
 });

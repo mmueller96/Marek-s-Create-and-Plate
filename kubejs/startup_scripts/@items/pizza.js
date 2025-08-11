@@ -1,5 +1,9 @@
 StartupEvents.registry('item', (event) => {
   event
+    .create('raw_michelles_lieblingspizza')
+    .displayName("Rohe Michelle's Lieblingspizza");
+
+  event
     .create('michelles_lieblingspizza')
     .food((food) => {
       food.hunger(20);
