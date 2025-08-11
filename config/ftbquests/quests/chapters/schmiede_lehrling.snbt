@@ -1,0 +1,41 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "schmiede_lehrling"
+	group: "354AFCABE22A0F03"
+	id: "0F199B572B21ACA0"
+	order_index: 2
+	quest_links: [{
+		id: "2F5237B40E3CC1DF"
+		linked_quest: "588190533D810E0A"
+		x: -8.0d
+		y: -3.0d
+	}]
+	quests: [
+		{
+			id: "24319B4769732313"
+			tasks: [{
+				id: "2217F9C28BC5E387"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"24319B4769732313"
+				"588190533D810E0A"
+			]
+			id: "6A39455D57A20557"
+			tasks: [{
+				id: "66A2D22F1585BF69"
+				title: "Brass Aloying"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+	]
+	title: "Schmiede Lehrling"
+}

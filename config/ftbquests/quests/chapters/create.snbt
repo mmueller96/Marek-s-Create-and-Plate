@@ -5,7 +5,14 @@
 	group: "354AFCABE22A0F03"
 	id: "2CB06E9EB7AB3FF1"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [{
+		id: "477D3EE53B3069F1"
+		linked_quest: "6A39455D57A20557"
+		shape: "gear"
+		size: 2.0d
+		x: -11.0d
+		y: 2.0d
+	}]
 	quests: [
 		{
 			description: ["Create"]
@@ -153,8 +160,8 @@
 		{
 			dependencies: [
 				"41BA57366BAFC353"
-				"588190533D810E0A"
 				"7C9FB8AC45434D65"
+				"6A39455D57A20557"
 			]
 			id: "604D4922D0F07760"
 			shape: "gear"
