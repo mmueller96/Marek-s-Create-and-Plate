@@ -13,8 +13,6 @@ ServerEvents.recipes((event) => {
 		});
 	}
 
-	event.remove({ type: 'create:automatic_shapeless' });
-
 	event.recipes.create.filling('createfood:pizza_dough_tomato_sauce', [
 		'createfood:pizza_dough',
 		Fluid.of('delightfulcreators:tomato_sauce', 333),
